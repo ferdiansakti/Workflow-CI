@@ -59,7 +59,7 @@ jobs:
       # ======================
       - name: Build Docker Image
         run: |
-          docker build -t loan-model .
+          docker build -t loan-model ./MLProject
 
       # ======================
       # PUSH DOCKER
