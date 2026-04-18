@@ -2,8 +2,8 @@ FROM python:3.10-slim
 
 WORKDIR /app
 
-COPY MLProject /app/MLProject
+COPY . /app
 
 RUN pip install pandas scikit-learn mlflow
 
-CMD ["python", "MLProject/modelling.py"]
+CMD ["python", "modelling.py"]
